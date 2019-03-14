@@ -1,14 +1,6 @@
-pipeline {
-  agent {
-    docker {
-	echo 'Docker'  
-    }
-  }
-  stages {
-    stage ('build') {
-      steps {
-        echo 'Install Something'
-      }
-    }
+node {
+  stage('SCM Checkout')
+  {
+    echo 'test'
   }
 }
